@@ -1,25 +1,28 @@
 #ifndef POKEMON_H
 #define POKEMON_H
 
-typedef struct {
+typedef struct
+{
     char name[12];
     double height;
     double weight;
     int attack;
-} pokemon ;
+} pokemon;
 
-typedef struct typeofpokemon{
+typedef struct typeofpokemon
+{
     int howmany;
     char name[9];
     pokemon *pokemonsofthistype;
     struct typeofpokemon *effectiveagainstme;
     struct typeofpokemon *effectiveagainstother;
-} typeofpokemon ;
+} typeofpokemon;
 
-typedef struct  {
+typedef struct
+{
     int num_types;
     typeofpokemon *types;
-} pokedex ;
+} pokedex;
 
 // initializes pokedex
 void init_pokedex(pokedex *ppokedex, int numoftypes, int numofpokemons, char typess[][9]);
@@ -30,4 +33,4 @@ void init_type(typeofpokemon *typeofpokemon, int num, char name[][9]);
 // initializes pokemon
 void init_pokemon(pokemon *curpokemon);
 
-# endif
+#endif
