@@ -22,10 +22,10 @@ typedef struct  {
 } pokedex ;
 
 // initializes pokedex
-void init_pokedex(pokedex *ppokedex, int numoftypes, int numofpokemons, char *types);
+void init_pokedex(pokedex *ppokedex, int numoftypes, int numofpokemons, char typess[][9]);
 
 // initializes type of pokemon
-void init_type(typeofpokemon *typeofpokemon, int num, char *name);
+void init_type(typeofpokemon *typeofpokemon, int num, char name[][9]);
 
 // initializes pokemon
 void init_pokemon(pokemon *curpokemon);
