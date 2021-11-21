@@ -48,7 +48,7 @@ int main(__attribute__((unused)) int argc, char **argv) {
 
 
     pokedex pokedex_1;
-    init_pokedex(&pokedex_1, numberOfTypes, numberOfPokemons, &listoftypes);
+    init_pokedex(&pokedex_1, numberOfTypes, numberOfPokemons, listoftypes);
 
 
     while (fgets(line, sizeof(line), data)) {
@@ -72,7 +72,7 @@ int main(__attribute__((unused)) int argc, char **argv) {
             i++;
         }
 
-        int nekudotaim = i-1 ;
+        int nekudotaim = i-1;
         letter[0] = line[i-2];
         if (strstr(&letter[0], "e") != 0) {
             int number = 0;
@@ -86,7 +86,7 @@ int main(__attribute__((unused)) int argc, char **argv) {
             int p;
             for (p = 0; p < numberOfTypes; p++) {
                 if (strcmp(pokedex_1.types[p].name, cur_type) == 0) {
-                    pokedex_1.types[p].effectiveagainstme = (typeofpokemon **) realloc(
+                    pokedex_1.types[p].effectiveagainstme = (typeofpokemon *) realloc(
                             pokedex_1.types[p].effectiveagainstme, number * sizeof(int));
                     int c;
                     for (c = 0; c < number; c++) {
