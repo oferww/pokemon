@@ -1,0 +1,41 @@
+Types
+Ice,Electric,Grass,Fire,Water,Ground
+	Electric effective-against-me:Fire
+	Electric effective-against-me:Water
+	Ice effective-against-other:Grass,Ground
+	Electric effective-against-me:Ground
+	Electric effective-against-me:Grass
+	Water effective-against-other:Fire,Ground
+	Electric effective-against-me:Ice
+	Electric effective-against-me:Electric
+	Fire effective-against-me:Water
+	Fire effective-against-me:Ground
+	Grass effective-against-other:Water
+	Fire effective-against-other:Grass,Ice
+	Electric effective-against-other:Ground
+	Water effective-against-me:Grass,Electric
+	Ground effective-against-me:Water,Grass,Ice
+	Electric effective-against-other:Grass
+	Electric effective-against-other:Ice
+	Ground effective-against-other:Fire,Electric
+	Grass effective-against-me:Fire,Ice	
+	Grass effective-against-other:Ground
+	Ice effective-against-me:Fire
+	Electric effective-against-other:Fire
+	Electric effective-against-other:Water
+	Electric effective-against-other:Electric
+Pokemons
+Jynx,HumanShapePokemon,1.4,40.6,50,Ice
+Ponyta,FireHorsePokemon,1.0,30.0,85,Fire
+Lapras,TransportPokemon,2.5,220.0,85,Ice
+Cubone,LonelyPokemon,0.4,6.5,50,Ground
+Pikachu,MousePokemon,0.4,6.0,55,Electric
+Bayleef,LeafPokemon,1.2,15.8,62,Grass
+Charmander,LizardPokemon,0.6,8.5,52,Fire
+Squirtle,TinyTurtlePokemon,0.5,9.0,48,Water
+Psyduck,DuckPokemon,0.8,19.6,52,Water
+Onix,RockSnakePokemon,8.8,210.0,45,Ground
+Magnemite,MagnetPokemon,0.3,6.0,35,Electric
+Oddish,WeedPokemon,0.5,5.4,50,Grass
+Seel,SeaLionPokemon,1.1,90.0,45,Water
+Bulbasaur,SeedPokemon,0.7,6.9,49,Grass
